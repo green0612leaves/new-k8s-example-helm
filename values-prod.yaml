@@ -1,0 +1,17 @@
+frontend:
+  image: zhangrui20200722/frontend
+  tag: latest
+  autoscaling:
+    averageUtilization: 50
+
+backend:
+  image: zhangrui20200722/backend
+  tag: latest
+  autoscaling:
+    averageUtilization: 50
+
+database:
+  enabled: false
+  uri: 10.10.10.10
+  username: external_postgres
+  password: external_postgres

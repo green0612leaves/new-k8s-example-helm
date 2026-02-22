@@ -1,0 +1,16 @@
+frontend:
+  image: zhangrui20200722/frontend
+  tag: 'v3'
+  autoscaling:
+    averageUtilization: 90
+backend:
+  image: zhangrui20200722/backend
+  tag: 'v2'
+  autoscaling:
+    averageUtilization: 90
+database:
+  enabled: true
+  uri: pg-service
+  username: postgres
+  password: postgres
+  
